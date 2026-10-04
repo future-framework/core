@@ -1,5 +1,5 @@
-# vuejs/core's test.yml: unit-test (ubuntu-latest, no matrix; Node from .node-version (lts/*)), for the Superaction scoreboard.
-name: Superaction
+# vuejs/core's test.yml: unit-test (ubuntu-latest, no matrix; Node from .node-version (lts/*)), for the SuperCI scoreboard.
+name: SuperCI (GitHub)
 
 on:
   workflow_dispatch: {}
@@ -9,8 +9,8 @@ permissions:
 
 jobs:
   test:
-    name: test / superaction-fabric
-    runs-on: superaction-fabric
+    name: test / github
+    runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
       PUPPETEER_SKIP_DOWNLOAD: 'true'
